@@ -1,0 +1,6 @@
+// Title: Apply Operations on Array to Maximize Sum of Squares
+            // Difficulty: Hard
+            // Language: Python3
+            // Link: https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/
+
+c
