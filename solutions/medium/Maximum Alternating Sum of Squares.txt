@@ -1,6 +1,0 @@
-// Title: Maximum Alternating Sum of Squares
-            // Difficulty: Medium
-            // Language: Python3
-            // Link: https://leetcode.com/problems/maximum-alternating-sum-of-squares/
-
-c
