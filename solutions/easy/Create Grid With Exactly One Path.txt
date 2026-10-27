@@ -1,0 +1,22 @@
+// Title: Create Grid With Exactly One Path
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/create-grid-with-exactly-one-path/
+
+                r += 1
+            else:
+                c += 1
+                
+            res[r][c] = '.'
+            if r < m - 1 and (c == n - 1 or abs((r + 1) * (n - 1) - c * (m - 1)) <= abs(r * (n - 1) - (c + 1) 
+        while r < m - 1 or c < n - 1:
+        
+        res[r][c] = '.'
+        
+        r = c = 0
+        res = [['#'] * n for _ in range(m)]
+            
+        return [''.join(row) for row in res]
+    def createGrid(self, m: int, n: int) -> list[str]:
+class Solution:
+            * (m - 1))):
