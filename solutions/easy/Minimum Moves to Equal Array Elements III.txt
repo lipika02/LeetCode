@@ -1,0 +1,17 @@
+// Title: Minimum Moves to Equal Array Elements III
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/minimum-moves-to-equal-array-elements-iii/
+
+        size = len(nums)
+
+        max_num = nums[size-1]
+
+        cnt = 0
+
+        for i in range(0, size-1):
+            cnt = cnt + (max_num -  nums[i])
+
+        print(cnt)
+        return cnt
+        
