@@ -1,0 +1,16 @@
+// Title: Minimum Operations to Make Elements Within K Subarrays Equal
+            // Difficulty: Hard
+            // Language: Python3
+            // Link: https://leetcode.com/problems/minimum-operations-to-make-elements-within-k-subarrays-equal/
+
+
+
+class Solution:
+    def minOperations(self, nums: List[int], x: int, k: int) -> int:
+        win = Window(nums[:x])
+        cost = [win.cost] + [win.slide(out, new) for out, new in zip(nums, nums[x:])]
+        best = [0] * (len(nums) + 1)  # best[i]: min ops for the windows placed so far 
+        inside nums[:i]
+        for _ in range(k):
+            best = list(accumulate([inf] * x + [b + c for b, c in zip(best, cost)], min))
+        return best[-1]
