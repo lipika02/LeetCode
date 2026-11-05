@@ -1,0 +1,18 @@
+// Title: Find the Distance Value Between Two Arrays
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/find-the-distance-value-between-two-arrays/
+
+            for j in range(0, len(arr2)):
+                if abs(arr1[i]-arr2[j]) <= d:
+            if not found:
+
+        return cnt
+            found = False
+                    found = True
+                    break
+                cnt += 1
+
+        
+        for i in range(0, len(arr1)):
+
