@@ -1,0 +1,16 @@
+// Title: Count Zero Request Servers
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/count-zero-request-servers/
+
+                r += 1
+
+            while l < r and logs[l][1] < t - x:
+                id = logs[l][0]
+                cnt[id] -= 1
+                if cnt[id] == 0: active -= 1
+                l += 1
+
+            ans[i] = n - active
+
+        return ans
