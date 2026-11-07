@@ -1,0 +1,11 @@
+// Title: Process Tasks Using Servers
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/process-tasks-using-servers/
+
+            ts = max(ts, i)
+            release(ts)
+            if not idle:
+                ts = busy[0][0]
+                release(ts)
+
