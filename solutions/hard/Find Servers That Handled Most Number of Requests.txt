@@ -1,0 +1,10 @@
+// Title: Find Servers That Handled Most Number of Requests
+            // Difficulty: Hard
+            // Language: Python3
+            // Link: https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/
+
+                x = heappop(free) % k
+                heappush(busy, (t + d, x))
+                handled.append(x)
+
+        return multimode(handled)
