@@ -1,0 +1,24 @@
+// Title: Count Non-Decreasing Subarrays After K Operations
+            // Difficulty: Hard
+            // Language: Python3
+            // Link: https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/
+
+                water += (x - nums[s]) * (end - s)
+            starts.appendleft(l)
+            while water > k:  # the right end leaves with its water
+                water -= nums[starts[-1]] - nums[r]
+                if starts[-1] == r:
+                    starts.pop()
+                r -= 1
+            ans += r - l + 1
+                end = starts[0] if starts else r + 1
+                s = starts.popleft()
+            starts at starts[0]
+            while starts and nums[starts[0]] <= x:  # x floods the plateau that 
+            x = nums[l]
+        ans, water, r = 0, 0, len(nums) - 1
+        for l in reversed(range(len(nums))):
+        return ans
+        starts = deque()  # where each plateau starts, left to right
+    def countNonDecreasingSubarrays(self, nums: list[int], k: int) -> int:
+class Solution:
