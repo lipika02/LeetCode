@@ -1,0 +1,8 @@
+// Title: Minimum Number of Changes to Make Binary String Beautiful
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/
+
+class Solution:
+    def minChanges(self, s: str) -> int:
+        return sum(a != b for a, b in batched(s, 2))
