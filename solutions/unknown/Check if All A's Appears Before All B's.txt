@@ -1,0 +1,8 @@
+// Title: Check if All A's Appears Before All B's
+            // Difficulty: Unknown
+            // Language: Python3
+            // Link: https://leetcode.com/problems/check-if-all-a's-appears-before-all-b's/
+
+class Solution:
+    def checkString(self, s: str) -> bool:
+        return 'ba' not in s
